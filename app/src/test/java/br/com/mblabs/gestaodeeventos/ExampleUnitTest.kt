@@ -1,4 +1,4 @@
-package br.com.mblabs.gestaodeprojetos
+package br.com.mblabs.gestaodeeventos
 
 import org.junit.Test
 
