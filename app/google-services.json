@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "901269023560",
+    "project_id": "mblabs-gestao-de-eventos",
+    "storage_bucket": "mblabs-gestao-de-eventos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:901269023560:android:3681ad081f58faa5a3217d",
+        "android_client_info": {
+          "package_name": "br.com.mblabs.gestaodeprojetos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "901269023560-pl3g5me61ia9fb2dcp26anilcl47h839.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABgbY184bLQ6Js5mFURAWk_5-9CKTrEKs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "901269023560-pl3g5me61ia9fb2dcp26anilcl47h839.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
