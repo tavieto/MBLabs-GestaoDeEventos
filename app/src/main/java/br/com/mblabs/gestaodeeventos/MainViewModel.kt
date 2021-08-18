@@ -19,9 +19,9 @@ import com.google.gson.Gson
 
 class MainViewModel(private val activity: MainActivity): ViewModel() {
 
-    var currentUser = FirebaseAuth.getInstance().currentUser
+    private var currentUser = FirebaseAuth.getInstance().currentUser
     private val database = Firebase.database
-    lateinit var myRef: DatabaseReference
+    private lateinit var myRef: DatabaseReference
 
     private val _emailIsNotEmpty: MutableLiveData<Boolean> = MutableLiveData()
     val emailIsNotEmpty: LiveData<Boolean> = _emailIsNotEmpty
