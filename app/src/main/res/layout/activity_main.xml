@@ -10,22 +10,13 @@
     android:padding="24dp"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/edtEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/email" />
-
-    <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/edtPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/password" />
-
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.gms.common.SignInButton
         android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/login"/>
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:textSize="18sp" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
