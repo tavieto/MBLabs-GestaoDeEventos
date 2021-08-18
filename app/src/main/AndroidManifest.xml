@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.GestãoDeProjetos">
+        android:theme="@style/Theme.GestãoDeEventos">
         <activity
             android:name="br.com.mblabs.gestaodeeventos.MainActivity"
             android:exported="true">
