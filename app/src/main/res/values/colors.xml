@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="medium_slate_blue">#9B64FD</color>
+    <color name="atomic_tangerine">#FF9F6B</color>
+    <color name="deep_champagne">#F0CC94</color>
+    <color name="dark_purple">#331832</color>
+    <color name="dark_purple_transparent">#7A331832</color>
+    <color name="ruby">#D81E5B</color>
 </resources>
