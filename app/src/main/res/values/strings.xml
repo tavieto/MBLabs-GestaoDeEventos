@@ -5,4 +5,7 @@
     <string name="login" translatable="false">Login</string>
     <string name="sign_in_google">Sign in with Google</string>
     <string name="app_description">Os melhores eventos do momento\n você encontra aqui!</string>
+    <string name="data">Dados</string>
+    <string name="data_description">Suas informações estão seguras conosco!</string>
+    <string name="nome">Nome*</string>
 </resources>

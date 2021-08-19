@@ -14,4 +14,5 @@
     <color name="dark_purple">#331832</color>
     <color name="dark_purple_transparent">#7A331832</color>
     <color name="ruby">#D81E5B</color>
+    <color name="default_gray">#9F9F9F</color>
 </resources>
