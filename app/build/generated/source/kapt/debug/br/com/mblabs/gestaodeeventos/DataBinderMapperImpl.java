@@ -23,7 +23,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(1);
 
   static {
-    INTERNAL_LAYOUT_ID_LOOKUP.put(br.com.mblabs.gestaodeeventos.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(br.com.mblabs.gestaodeeventos.R.layout.activity_login, LAYOUT_ACTIVITYMAIN);
   }
 
   @Override
@@ -97,7 +97,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(1);
 
     static {
-      sKeys.put("layout/activity_main_0", br.com.mblabs.gestaodeeventos.R.layout.activity_main);
+      sKeys.put("layout/activity_main_0", br.com.mblabs.gestaodeeventos.R.layout.activity_login);
     }
   }
 }

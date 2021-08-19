@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GestãoDeEventos">
         <activity
-            android:name="br.com.mblabs.gestaodeeventos.ui.MainActivity"
+            android:name="br.com.mblabs.gestaodeeventos.ui.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

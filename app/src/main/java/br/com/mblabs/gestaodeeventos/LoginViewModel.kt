@@ -1,12 +1,11 @@
 package br.com.mblabs.gestaodeeventos
 
-import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import br.com.mblabs.gestaodeeventos.data.User
-import br.com.mblabs.gestaodeeventos.ui.MainActivity
+import br.com.mblabs.gestaodeeventos.ui.LoginActivity
 import com.firebase.ui.auth.AuthUI
 import com.firebase.ui.auth.FirebaseAuthUIActivityResultContract
 import com.firebase.ui.auth.data.model.FirebaseAuthUIAuthenticationResult
@@ -20,8 +19,8 @@ import com.google.firebase.database.ktx.getValue
 import com.google.firebase.ktx.Firebase
 import com.google.gson.Gson
 
-class MainViewModel(
-    private val activity: MainActivity
+class LoginViewModel(
+    private val activity: LoginActivity
 ): ViewModel() {
 
     private var currentUser = FirebaseAuth.getInstance().currentUser
