@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.DataActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@drawable/bc_data"
+
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Title"
+                android:layout_margin="36dp"
+                android:text="@string/data"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.17000002" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Description"
+                android:layout_margin="36dp"
+                android:text="@string/data_description"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.77" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/header"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="24dp"
+                android:paddingBottom="50dp">
+
+                <!--Name-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtName"
+                    style="@style/TextInputLayout"
+                    tools:visibility="visible">
+
+                    <AutoCompleteTextView
+                        style="@style/AutoCompleteTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/nome"
+                        tools:visibility="visible" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--Birthday-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtBirthday"
+                    style="@style/TextInputLayout"
+                    tools:visibility="visible">
+
+                    <AutoCompleteTextView
+                        style="@style/AutoCompleteTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Data de nascimento*"
+                        tools:visibility="visible" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--UF-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtUF"
+                    style="@style/DropDownMenu"
+                    tools:visibility="visible">
+
+                    <AutoCompleteTextView
+                        style="@style/AutoCompleteTextView.DropDownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Estado*"
+
+                        android:inputType="none"
+                        tools:visibility="visible" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--City-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtCity"
+                    style="@style/DropDownMenu"
+                    tools:visibility="visible">
+
+                    <AutoCompleteTextView
+                        style="@style/AutoCompleteTextView.DropDownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Cidade*"
+                        tools:visibility="visible" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--Skin-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtSkin"
+                    style="@style/DropDownMenu"
+                    tools:visibility="visible">
+
+                    <AutoCompleteTextView
+                        style="@style/AutoCompleteTextView.DropDownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Cor / Raça"
+                        tools:visibility="visible" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--Sex-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtSex"
+                    style="@style/DropDownMenu"
+                    tools:visibility="visible">
+
+                    <AutoCompleteTextView
+                        style="@style/AutoCompleteTextView.DropDownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Gênero"
+                        tools:visibility="visible" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--Gender-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtGender"
+                    style="@style/DropDownMenu"
+                    tools:visibility="visible">
+
+                    <AutoCompleteTextView
+                        style="@style/AutoCompleteTextView.DropDownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Orientação sexual"
+                        tools:visibility="visible" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--Disabled people-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtDP"
+                    style="@style/DropDownMenu"
+                    tools:visibility="visible">
+
+                    <AutoCompleteTextView
+                        style="@style/AutoCompleteTextView.DropDownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Pessoa com deficiência"
+                        tools:visibility="visible" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--E-mail-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtEmail"
+                    style="@style/TextInputLayout">
+
+                    <AutoCompleteTextView
+                        style="@style/AutoCompleteTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="E-mail*"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--Button send-->
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="62dp"
+                    android:paddingVertical="14dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:textSize="@dimen/text_large"
+                    android:text="Enviar"
+                    android:fontFamily="@font/mulish_bold"
+                    android:textAllCaps="false"
+                    android:letterSpacing="0"
+                    app:cornerRadius="30dp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

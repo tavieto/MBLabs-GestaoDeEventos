@@ -6,6 +6,7 @@ import android.view.View;
 import androidx.databinding.DataBinderMapper;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
+import br.com.mblabs.gestaodeeventos.databinding.ActivityDataBindingImpl;
 import br.com.mblabs.gestaodeeventos.databinding.ActivityLoginBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
@@ -18,11 +19,14 @@ import java.util.HashMap;
 import java.util.List;
 
 public class DataBinderMapperImpl extends DataBinderMapper {
-  private static final int LAYOUT_ACTIVITYLOGIN = 1;
+  private static final int LAYOUT_ACTIVITYDATA = 1;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(1);
+  private static final int LAYOUT_ACTIVITYLOGIN = 2;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(2);
 
   static {
+    INTERNAL_LAYOUT_ID_LOOKUP.put(br.com.mblabs.gestaodeeventos.R.layout.activity_data, LAYOUT_ACTIVITYDATA);
     INTERNAL_LAYOUT_ID_LOOKUP.put(br.com.mblabs.gestaodeeventos.R.layout.activity_login, LAYOUT_ACTIVITYLOGIN);
   }
 
@@ -35,6 +39,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         throw new RuntimeException("view must have a tag");
       }
       switch(localizedLayoutId) {
+        case  LAYOUT_ACTIVITYDATA: {
+          if ("layout/activity_data_0".equals(tag)) {
+            return new ActivityDataBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_data is invalid. Received: " + tag);
+        }
         case  LAYOUT_ACTIVITYLOGIN: {
           if ("layout/activity_login_0".equals(tag)) {
             return new ActivityLoginBindingImpl(component, view);
@@ -94,9 +104,10 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(1);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(2);
 
     static {
+      sKeys.put("layout/activity_data_0", br.com.mblabs.gestaodeeventos.R.layout.activity_data);
       sKeys.put("layout/activity_login_0", br.com.mblabs.gestaodeeventos.R.layout.activity_login);
     }
   }
