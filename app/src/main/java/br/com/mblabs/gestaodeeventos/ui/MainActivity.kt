@@ -1,17 +1,25 @@
-package br.com.mblabs.gestaodeeventos
+package br.com.mblabs.gestaodeeventos.ui
 
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.WindowInsetsControllerCompat
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProvider
+import br.com.mblabs.gestaodeeventos.MainViewModel
+import br.com.mblabs.gestaodeeventos.MainViewModelFactory
+import br.com.mblabs.gestaodeeventos.R
 import br.com.mblabs.gestaodeeventos.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private val viewModel: MainViewModel by lazy {
-        MainViewModel(activity = this)
+    private val mainViewModel: MainViewModel by lazy {
+        ViewModelProvider(
+            this,
+            MainViewModelFactory(this)
+        ).get(MainViewModel::class.java)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,38 +32,19 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setObservers() {
-        viewModel.emailIsNotEmpty.observe(this, {
-            if (it) {
-                setEmail()
-            }
+        mainViewModel.emailIsNotEmpty.observe(this, {
+
         })
     }
 
     private fun setClickListeners() {
         binding.btnLogin.setOnClickListener {
-            viewModel.setFirebaseAuthentication()
-        }
-        binding.btnDB.setOnClickListener {
-            viewModel.setFirebaseRealTimeDatabase()
-        }
-        binding.btnDBGET.setOnClickListener {
-            viewModel.readDB()
-        }
-        binding.btnLogout.setOnClickListener {
-            viewModel.logout()
+            mainViewModel.setFirebaseAuthentication()
         }
     }
 
     private fun configureView() {
         val signInGoogle: TextView = binding.btnLogin.getChildAt(0) as TextView
         signInGoogle.setText(R.string.sign_in_google)
-
-        setEmail()
     }
-
-    private fun setEmail() {
-        binding.txtEmail.text = viewModel.getEmail()
-    }
-
-
 }

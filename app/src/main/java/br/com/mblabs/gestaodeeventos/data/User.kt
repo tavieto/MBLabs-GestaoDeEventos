@@ -1,4 +1,4 @@
-package br.com.mblabs.gestaodeeventos
+package br.com.mblabs.gestaodeeventos.data
 
 data class User(
     val email: String,
