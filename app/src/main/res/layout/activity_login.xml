@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.LoginActivity">
 
+    <!--Root-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/medium_slate_blue">
 
+        <!--Logo-->
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imgLogo"
             android:layout_width="wrap_content"
@@ -21,7 +23,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.19"
             app:srcCompat="@drawable/ic_logo" />
-
+        <!--App title-->
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/txtTitle"
             android:layout_width="wrap_content"
@@ -40,7 +42,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imgLogo"
             app:layout_constraintVertical_bias="0.100000024" />
-
+        <!--App description-->
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/txtDescription"
             android:layout_width="wrap_content"
@@ -57,7 +59,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/txtTitle"
             app:layout_constraintVertical_bias="0.29000002" />
-
+        <!--Sign In button-->
         <com.google.android.gms.common.SignInButton
             android:id="@+id/btnLogin"
             android:layout_width="wrap_content"
@@ -70,13 +72,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.77" />
-
+        <!--Background color-->
         <View
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:elevation="1dp"
             android:background="@color/dark_purple_transparent"/>
 
+        <!--Balls on background-->
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -85,7 +88,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.110000014"
             app:srcCompat="@drawable/ic_group_1" />
-
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -93,7 +95,6 @@
 
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_group_2" />
-
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -103,7 +104,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.90999997"
             app:srcCompat="@drawable/ic_group_3" />
-
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
