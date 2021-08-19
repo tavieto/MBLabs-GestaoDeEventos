@@ -1,4 +1,4 @@
-package br.com.mblabs.gestaodeeventos
+package br.com.mblabs.gestaodeeventos.presenter.login
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

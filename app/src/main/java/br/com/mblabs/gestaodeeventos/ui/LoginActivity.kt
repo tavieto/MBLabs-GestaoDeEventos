@@ -5,8 +5,8 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
-import br.com.mblabs.gestaodeeventos.LoginViewModel
-import br.com.mblabs.gestaodeeventos.LoginViewModelFactory
+import br.com.mblabs.gestaodeeventos.presenter.login.LoginViewModel
+import br.com.mblabs.gestaodeeventos.presenter.login.LoginViewModelFactory
 import br.com.mblabs.gestaodeeventos.R
 import br.com.mblabs.gestaodeeventos.databinding.ActivityLoginBinding
 

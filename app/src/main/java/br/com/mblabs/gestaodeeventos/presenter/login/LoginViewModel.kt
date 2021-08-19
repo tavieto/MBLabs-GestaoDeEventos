@@ -1,4 +1,4 @@
-package br.com.mblabs.gestaodeeventos
+package br.com.mblabs.gestaodeeventos.presenter.login
 
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.LiveData
