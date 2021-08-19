@@ -6,7 +6,7 @@ import android.view.View;
 import androidx.databinding.DataBinderMapper;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
-import br.com.mblabs.gestaodeeventos.databinding.ActivityMainBindingImpl;
+import br.com.mblabs.gestaodeeventos.databinding.ActivityLoginBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
@@ -18,12 +18,12 @@ import java.util.HashMap;
 import java.util.List;
 
 public class DataBinderMapperImpl extends DataBinderMapper {
-  private static final int LAYOUT_ACTIVITYMAIN = 1;
+  private static final int LAYOUT_ACTIVITYLOGIN = 1;
 
   private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(1);
 
   static {
-    INTERNAL_LAYOUT_ID_LOOKUP.put(br.com.mblabs.gestaodeeventos.R.layout.activity_login, LAYOUT_ACTIVITYMAIN);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(br.com.mblabs.gestaodeeventos.R.layout.activity_login, LAYOUT_ACTIVITYLOGIN);
   }
 
   @Override
@@ -35,11 +35,11 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         throw new RuntimeException("view must have a tag");
       }
       switch(localizedLayoutId) {
-        case  LAYOUT_ACTIVITYMAIN: {
-          if ("layout/activity_main_0".equals(tag)) {
-            return new ActivityMainBindingImpl(component, view);
+        case  LAYOUT_ACTIVITYLOGIN: {
+          if ("layout/activity_login_0".equals(tag)) {
+            return new ActivityLoginBindingImpl(component, view);
           }
-          throw new IllegalArgumentException("The tag for activity_main is invalid. Received: " + tag);
+          throw new IllegalArgumentException("The tag for activity_login is invalid. Received: " + tag);
         }
       }
     }
@@ -97,7 +97,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(1);
 
     static {
-      sKeys.put("layout/activity_main_0", br.com.mblabs.gestaodeeventos.R.layout.activity_login);
+      sKeys.put("layout/activity_login_0", br.com.mblabs.gestaodeeventos.R.layout.activity_login);
     }
   }
 }
